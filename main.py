@@ -1,4 +1,3 @@
-
 from agent_d.drone_control_agent import DroneControlAgent
 
 if __name__ == "__main__":
