@@ -1,5 +1,6 @@
 from string import Template
 import autogen  # type: ignore
+import pyautogen
 
 from agent_d.skills import (
     takeoff, land, fly_to_coordinates, circle_a_point,
@@ -9,7 +10,7 @@ from agent_d.utils.helper_functions import example_helper
 from agent_d.utils.prompts import LLM_PROMPTS
 
 class DroneControlAgent:
-    def __init__(self, config_list, user_proxy_agent: autogen.UserProxyAgent): # type: ignore
+    def __init__(self, config_list, user_proxy_agent: pyautogen.UserProxyAgent): # type: ignore
         self.user_proxy_agent = user_proxy_agent
         user_ltm = self.__get_ltm()
         system_message = LLM_PROMPTS["DRONE_AGENT_PROMPT"]
