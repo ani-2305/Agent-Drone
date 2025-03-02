@@ -1,7 +1,7 @@
 
-# Agent-D
+# Agent-Drone
 
-Agent-D is an agent-based system that aims to automate actions for controlling drones using natural language commands. The system is built on the AutoGen agent framework.
+Agent-Drone is an agent-based system that aims to automate actions for controlling drones using natural language commands. The system is built on the AutoGen agent framework.
 
 ## Features
 
